@@ -33,19 +33,31 @@ Struktur Project
 
 Proyek ini memiliki struktur dasar sebagai berikut:
 
-    app-audit-log-api/
-    ├── cmd/
-    │   └── main.go
-    ├── config/
-    │   └── config.go
-    ├── controllers/
-    │   └── audit_controller.go
-    ├── models/
-    │   └── audit_model.go
-    ├── repositories/
-    │   └── audit_repository.go
-    ├── services/
-    │   └── audit_service.go
-    ├── go.mod
-    ├── go.sum
-    └── README.md
+```
+├───src
+│   ├───common
+│   │   ├───http
+│   │   └───utils
+│   │       ├───httpresponse
+│   │       └───middlewares
+│   ├───domain
+│   │   ├───models
+│   │   └───repositories
+│   ├───infrastructure
+│   │   ├───api
+│   │   ├───cache
+│   │   ├───database
+│   │   │   └───mysql
+│   │   └───rabbitmq
+│   ├───interfaces
+│   │   ├───kafka
+│   │   ├───mq
+│   │   ├───rest
+│   │   │   └───controller
+│   │   └───rpc
+│   ├───payload
+│   │   ├───request
+│   │   └───response
+│   └───usecases
+└───tmp
+```
