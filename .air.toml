@@ -1,0 +1,6 @@
+# .air.toml
+root = "."
+tmp_dir = "tmp"
+
+[color]
+primary = "yellow"
